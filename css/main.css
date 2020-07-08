@@ -1,0 +1,91 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;     /*will stay on 1 line */
+  max-width: 1140px;
+}
+
+.box {
+  background-color: #8ea86e;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  height: 200px;
+  max-width: 641px;
+   margin: 10px;
+   font-size: 1em;
+   /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
+   flex-grow: 1;
+
+}
+
+.box1 {
+  background-color: pink;
+}
+
+.box4 {
+
+}
+
+.box2 {
+  background-color: red;
+
+}
+
+.box3 {
+}
+
+ /* mobile first */
+@media screen and (max-width: 640px) {
+
+.box {
+  color: #fff;
+  height: 200px;
+  max-width: 641px;
+  line-height: 200px;
+ }
+
+ .box3 {
+   display: none;
+ }
+ .box4 {
+   display: none;
+ }
+
+}
+
+@media screen and (min-width: 641px) {
+  .container {
+   flex-wrap: nowrap;
+   flex-direction: row;
+   }
+
+   .box {
+     height: 200px;
+     line-height: 200px;
+   }
+   .box1 {
+     background-color: blue;
+   }
+
+   .box2 {
+     background-color: purple;
+   }
+
+   .box3 {
+     background-color: grey;
+   }
+
+   .box4 {
+     background-color: brown;
+   }
+
+}
