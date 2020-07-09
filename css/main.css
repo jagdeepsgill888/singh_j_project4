@@ -24,6 +24,9 @@ body {
    font-size: 1em;
    /* 1em = 16px 2em = 32px  , we set the vaule of em unit then times it  */
    flex-grow: 1;
+   color: #fff;
+   height: 200px;
+   line-height: 200px;
 
 }
 
@@ -32,7 +35,7 @@ body {
 }
 
 .box4 {
-
+   display: none;
 }
 
 .box2 {
@@ -41,26 +44,10 @@ body {
 }
 
 .box3 {
+  display: none;
 }
 
- /* mobile first */
-@media screen and (max-width: 640px) {
 
-.box {
-  color: #fff;
-  height: 200px;
-  max-width: 641px;
-  line-height: 200px;
- }
-
- .box3 {
-   display: none;
- }
- .box4 {
-   display: none;
- }
-
-}
 
 @media screen and (min-width: 641px) {
   .container {
@@ -82,10 +69,12 @@ body {
 
    .box3 {
      background-color: grey;
+     display: block;
    }
 
    .box4 {
      background-color: brown;
+     display: block;
    }
 
 }
